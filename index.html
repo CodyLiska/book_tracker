@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Book Tracker</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+</head>
+
+<body>
+  <div class="row">
+    <form class="p-4 col-6">
+      <div class="row">
+        <div class="col">
+          <label for="title" class="form-label">Title</label>
+          <input type="text" class="form-control" id="title">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6" id="startDate">
+          <label for="startDate" class="form-label">Start Date</label>
+          <input type="date" class="form-control" id="startDate">
+        </div>
+        <div class="col-6" id="endDate">
+          <label for="finishDate" class="form-label">Finish Date</label>
+          <input type="date" class="form-control" id="finishDate">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <label for="author" class="form-label">Author(s)</label>
+          <input type="text" class="form-control" id="author">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-8" id="publisher">
+          <label for="publisher" class="form-label">Publisher</label>
+          <input type="text" class="form-control" id="publisher">
+        </div>
+        <div class="col-4" id="yearPublished">
+          <label for="yearPublished" class="form-label">Year Published</label>
+          <input type="date" class="form-control" id="yearPublished">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6" id="fictionGenre">
+          <label for="fictionGenre" class="form-label">Fiction/Genre</label>
+          <input type="text" class="form-control" id="fictionGenre">
+        </div>
+        <div class="col-6" id="nonFictionCat">
+          <label for="nonFictionCat" class="form-label">or Nonfiction/Category</label>
+          <input type="text" class="form-control" id="nonFictionCat">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col" id="fromWhere">
+          <label for="fromWhere" class="form-label">Where I bought, borrowed, or found the book</label>
+          <input type="text" class="form-control" id="fromWhere">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col" id="mainCharacters">
+          <label for="mainCharacters" class="form-label">Main characters(s) or subject</label>
+          <input type="text" class="form-control" id="mainCharacters">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col" id="myThoughts">
+          <label for="myThoughts" class="form-label">My Review and thoughts</label>
+          <textarea class="form-control" id="myThoughts" rows="6"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-2 pt-2">
+          <button type="submit" class="btn btn-primary">Add Book</button>
+        </div>
+        <div class="col-6 pt-2">
+          <div class="ratings p-2">Rating:
+            <i class="bi bi-star"></i>
+            <i class="bi bi-star"></i>
+            <i class="bi bi-star"></i>
+            <i class="bi bi-star"></i>
+            <i class="bi bi-star"></i>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <div class="col-6">
+      <div class="row">
+        <h1>Jurassic Park: A Novel</h1>
+        <div class="row">
+          <div class="col-3">
+            <label>Date Started:</label>
+            <h5>05/22/2022</h5>
+          </div>
+          <div class="col-3">
+            <label>Date Finished</label>
+            <h5>12/05/2022</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4">
+            <label>Author(s)</label>
+            <h6>Michael Crichton</h6>
+          </div>
+          <div class="col-4">
+            <label>Publisher</label>
+            <h6>Random House Publishing Group</h6>
+          </div>
+          <div class="col-4">
+            <label>Year Published</label>
+            <h6>1992</h6>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4">
+            <label>Genre or Category</label>
+            <h6>Sci-Fi Thriller</h6>
+          </div>
+          <div class="col-6">
+            <label>How I got this book</label>
+            <h6>Bought from Banes and Nobel</h6>
+          </div>
+        </div>
+        <div class="row">
+          <label>Main Character(s) or Subject</label>
+          <h6>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</h6>
+        </div>
+        <div class="row">
+          <label>My Review</label>
+          <h6>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum"</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.js"></script>
+</body>
+
+</html>
