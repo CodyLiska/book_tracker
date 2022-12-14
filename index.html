@@ -15,73 +15,73 @@
 <body>
   <div class="container-fluid">
     <div class="row">
-      <form class="p-4 col-6">
+      <form class="p-4 col-6" id="form">
         <div class="row">
           <div class="col">
             <label for="title" class="form-label">Title</label>
-            <input type="text" class="form-control" id="title">
+            <input type="text" class="form-control" id="title" name="title">
           </div>
         </div>
         <div class="row">
           <div class="col-6" id="startDate">
             <label for="startDate" class="form-label">Start Date</label>
-            <input type="date" class="form-control" id="startDate">
+            <input type="date" class="form-control" id="startDate" name="startDate">
           </div>
           <div class="col-6" id="endDate">
             <label for="finishDate" class="form-label">Finish Date</label>
-            <input type="date" class="form-control" id="finishDate">
+            <input type="date" class="form-control" id="finishDate" name="finishDate">
           </div>
         </div>
         <div class="row">
           <div class="col">
             <label for="author" class="form-label">Author(s)</label>
-            <input type="text" class="form-control" id="author">
+            <input type="text" class="form-control" id="author" name="author">
           </div>
         </div>
         <div class="row">
           <div class="col-8" id="publisher">
             <label for="publisher" class="form-label">Publisher</label>
-            <input type="text" class="form-control" id="publisher">
+            <input type="text" class="form-control" id="publisher" name="publisher">
           </div>
           <div class="col-4" id="yearPublished">
             <label for="yearPublished" class="form-label">Year Published</label>
-            <input type="date" class="form-control" id="yearPublished">
+            <input type="date" class="form-control" id="yearPublished" name="yearPublished">
           </div>
         </div>
         <div class="row">
           <div class="col-6" id="fictionGenre">
             <label for="fictionGenre" class="form-label">Fiction/Genre</label>
-            <input type="text" class="form-control" id="fictionGenre">
+            <input type="text" class="form-control" id="fictionGenre" name="fictionGenre">
           </div>
           <div class="col-6" id="nonFictionCat">
             <label for="nonFictionCat" class="form-label">or Nonfiction/Category</label>
-            <input type="text" class="form-control" id="nonFictionCat">
+            <input type="text" class="form-control" id="nonFictionCat" name="nonFictionCat">
           </div>
         </div>
         <div class="row">
           <div class="col" id="fromWhere">
             <label for="fromWhere" class="form-label">Where I bought, borrowed, or found the book</label>
-            <input type="text" class="form-control" id="fromWhere">
+            <input type="text" class="form-control" id="fromWhere" name="fromWhere">
           </div>
         </div>
         <div class="row">
           <div class="col" id="mainCharacters">
             <label for="mainCharacters" class="form-label">Main characters(s) or subject</label>
-            <input type="text" class="form-control" id="mainCharacters">
+            <input type="text" class="form-control" id="mainCharacters" name="mainCharacters">
           </div>
         </div>
         <div class="row">
           <div class="col" id="myThoughts">
             <label for="myThoughts" class="form-label">My Review and thoughts</label>
-            <textarea class="form-control" id="myThoughts" rows="6"></textarea>
+            <textarea class="form-control" id="myThoughts" rows="6" name="myThoughts"></textarea>
           </div>
         </div>
         <div class="row">
           <div class="col-2 pt-2">
-            <button type="submit" class="btn btn-primary">Add Book</button>
+            <button type="submit" class="btn btn-primary" id="submitBtn">Add</button>
           </div>
           <div class="col-6 pt-2">
-            <div class="ratings p-2">Rating:
+            <div class="ratings p-2" id="starRating" name="starRating">Rating:
               <i class="bi bi-star"></i>
               <i class="bi bi-star"></i>
               <i class="bi bi-star"></i>
