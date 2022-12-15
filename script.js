@@ -1,11 +1,13 @@
 // BOOK SUBMIT //
-const form = document.querySelector('form').addEventListener('submit', addBook)
+const form = document.getElementById('input-form')
+form.addEventListener('submit', addBook)
 
-function addBook(event){
-  event.preventDefault()
-  const formValues = new FormData(event.target)
+function addBook(e){
+  e.preventDefault()
+  const formValues = new FormData(e.target)
   const bookData = Object.fromEntries(formValues.entries())
   console.log({bookData})
+  document.getElementById('input-form').reset()
 }
 
 // BOOK SEARCH AREA //
