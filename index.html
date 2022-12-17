@@ -15,7 +15,7 @@
 <body>
   <div class="container-fluid">
     <div class="row">
-      <form class="p-4 col-6" id="input-form">
+      <form class="p-2 col-6" id="input-form">
         <div class="row">
           <div class="col">
             <label for="title" class="form-label">Title</label>
@@ -73,7 +73,7 @@
         <div class="row">
           <div class="col" id="myThoughts">
             <label for="myThoughts" class="form-label">My Review and thoughts</label>
-            <textarea class="form-control" id="myThoughts" rows="6" name="myThoughts"></textarea>
+            <textarea class="form-control" id="myThoughts" rows="4" name="myThoughts"></textarea>
           </div>
         </div>
         <div class="row">
@@ -122,49 +122,51 @@
             </div>
           </nav>
         </div>
-        <div class="row">
-          <h1 id="dispTitle"></h1>
+        <div class="d-none" id="displayArea">
           <div class="row">
-            <div class="col-3">
-              <label>Date Started:</label>
-              <h5 id="dateStarted"></h5>
+            <h1 id="dispTitle"></h1>
+            <div class="row">
+              <div class="col-3">
+                <label>Date Started:</label>
+                <h5 id="dateStarted"></h5>
+              </div>
+              <div class="col-3">
+                <label>Date Finished</label>
+                <h5 id="dispDateFinished"></h5>
+              </div>
             </div>
-            <div class="col-3">
-              <label>Date Finished</label>
-              <h5 id="dispDateFinished"></h5>
+            <div class="row">
+              <div class="col-4">
+                <label>Author(s)</label>
+                <h6 id="dispAuthor"></h6>
+              </div>
+              <div class="col-4">
+                <label>Publisher</label>
+                <h6 id="dispPublisher"></h6>
+              </div>
+              <div class="col-4">
+                <label>Year Published</label>
+                <h6 id="dispYearPublished"></h6>
+              </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-4">
-              <label>Author(s)</label>
-              <h6 id="dispAuthor"></h6>
+            <div class="row">
+              <div class="col-4">
+                <label>Genre or Category</label>
+                <h6 id="dispGenere"></h6>
+              </div>
+              <div class="col-6">
+                <label>How I got this book</label>
+                <h6 id="dispLocation"></h6>
+              </div>
             </div>
-            <div class="col-4">
-              <label>Publisher</label>
-              <h6 id="dispPublisher"></h6>
+            <div class="row">
+              <label>Main Character(s) or Subject</label>
+              <h6 id="dispMainCharacters"></h6>
             </div>
-            <div class="col-4">
-              <label>Year Published</label>
-              <h6 id="dispYearPublished"></h6>
+            <div class="row">
+              <label>My Review</label>
+              <h6 id="dispReview"></h6>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-4">
-              <label>Genre or Category</label>
-              <h6 id="dispGenere"></h6>
-            </div>
-            <div class="col-6">
-              <label>How I got this book</label>
-              <h6 id="dispLocation"></h6>
-            </div>
-          </div>
-          <div class="row">
-            <label>Main Character(s) or Subject</label>
-            <h6 id="dispMainCharacters"></h6>
-          </div>
-          <div class="row">
-            <label>My Review</label>
-            <h6 id="dispReview"></h6>
           </div>
         </div>
       </div>

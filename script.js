@@ -8,6 +8,7 @@ function addBook(e){
   const bookData = Object.fromEntries(formValues.entries())
   console.log({bookData})
   document.getElementById('input-form').reset()
+  document.getElementById('displayArea').classList.remove('d-none')
 
   document.getElementById('dispTitle').innerText = bookData.title
   document.getElementById('dateStarted').innerText = bookData.startDate
@@ -19,9 +20,6 @@ function addBook(e){
   document.getElementById('dispLocation').innerText = bookData.fromWhere
   document.getElementById('dispMainCharacters').innerText = bookData.mainCharacters
   document.getElementById('dispReview').innerText = bookData.myThoughts
-  
-  //TODO 
-  //  hide labels on display side until btn is clicked
 }
 
 // BOOK SEARCH AREA //
